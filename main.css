@@ -1,0 +1,296 @@
+/* ------------------------------
+   GOOGLE FONTS + RESET
+------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: gray;
+}
+
+header .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header .navbar a {
+  font-size: 1rem;
+  color: gray;
+  transition: 0.3s;
+}
+
+header .navbar a:hover {
+  color: #000;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  outline: none;
+}
+header .basket{
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #fff;
+}
+/* ------------------------------
+   HOME SECTION
+------------------------------ */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8rem 10% 4rem;
+  gap: 2rem;
+}
+
+.home .image-home img {
+  max-width: 600px;
+  opacity: 60%;
+}
+
+.home .text-home {
+  max-width: 500px;
+}
+
+.home .text-home h1 {
+  font-size: 3rem;
+  color: #465a65;
+  margin-bottom: 2rem;
+}
+
+.home .text-home p {
+  color: gray;
+  text-align: justify;
+}
+
+/* ------------------------------
+   PRODUCTS SECTION
+------------------------------ */
+#container {
+  margin: 1rem;
+  padding: 5rem 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.card span {
+  color: darkred;
+  font-size: 1rem;
+}
+
+.card button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 1px solid lightgray;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #ddd;
+}
+
+.card .remove {
+  background: lightcoral;
+  color: #000;
+}
+
+
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 10%;
+}
+
+.discount .discount-text {
+  max-width: 600px;
+}
+
+.discount .discount-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.discount .discount-text span {
+  color: #ffc237;
+}
+
+.discount .discount-text p {
+  color: gray;
+  text-align: justify;
+  line-height: 1.6rem;
+}
+
+.discount .discount-image img {
+  max-width: 500px;
+  opacity: 60%;
+}
+
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 4rem 10%;
+}
+
+.info img {
+  max-width: 400px;
+  opacity: 60%;
+}
+
+.info .information-form {
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 400px;
+}
+
+.information-form input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.information-form .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons .form-btn,
+.buttons .edit-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.buttons .form-btn:hover,
+.buttons .edit-btn:hover {
+  background: #ddd;
+}
+
+
+.footer {
+  background-color: #eee;
+  color: #000;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer-links a,
+.footer-social a {
+  display: block;
+  color: #000;
+  margin: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #ffc237;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
