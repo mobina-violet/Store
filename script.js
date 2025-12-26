@@ -128,7 +128,8 @@ const handleEdit = () => {
 // add to basket
 const handletoBasket = (productId) => {
   const selectedProduct = PRODUCTS.find((item) => item.id === productId);
-  if (!selectedProduct) return;
+  if (!selectedProduct)
+     return;
 
   const inBasket = BASKET.find((item) => item.id === productId);
 
@@ -158,6 +159,7 @@ const showBasket = () => {
 
   renderBasket(BASKET);
 };
+
 //in browser
 const showAllProducts = () => {
   footerSection.style.display = "none";
